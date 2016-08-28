@@ -22,8 +22,8 @@ sample <- filter(houseHoldConsumption,Time_stamp >= '2007-02-01 00:00:00' & Time
 
 #b<-select(sample,Date,Global_active_power)
 t2_subset<-select(sample,Time_stamp,Sub_metering_1,Sub_metering_2,Sub_metering_3)
-t2_subset$Sub_metering_1<-(as.numeric(t2_subset$Sub_metering_1)-2)
-t2_subset$Sub_metering_2<-(as.numeric(t2_subset$Sub_metering_2)-2)
+t2_subset$Sub_metering_1<-(as.numeric(t2_subset$Sub_metering_1))
+t2_subset$Sub_metering_2<-(as.numeric(t2_subset$Sub_metering_2))
 t2_subset$Sub_metering_3<-(as.numeric(t2_subset$Sub_metering_3))
 #b<-filter(b,!is.na(Global_active_power) )
 #b$Date<-as.Date(b$Date,"%d/%m/%Y")
