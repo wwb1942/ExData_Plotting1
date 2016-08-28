@@ -24,7 +24,7 @@ t_subset<-select(sample,Time_stamp,Global_active_power)
 #b<-filter(b,!is.na(Global_active_power) )
 #b$Date<-as.Date(b$Date,"%d/%m/%Y")
 #b$Time_stamp<-as.Date(b$Time_stamp)
-t_subset$Global_active_power<-as.numeric(t_subset$Global_active_power)/500
+t_subset$Global_active_power<-as.numeric(t_subset$Global_active_power)
 #b$weekofday <-weekdays(b$Date)
 
 #c<-select(b,Global_active_power,weekofday)
